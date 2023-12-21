@@ -112,3 +112,5 @@ button.addEventListener("click", doSomething);
 ```
 
 En este ejemplo, cuando se hace clic en el botón, se ejecutará la función **myButton**.
+
+## Finalize este curso en 8:30h
