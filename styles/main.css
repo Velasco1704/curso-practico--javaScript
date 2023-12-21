@@ -354,6 +354,7 @@
   place-items: center;
 }
 .cards-container .product-cart {
+  cursor: pointer;
   width: 15rem;
 }
 .cards-container .product-cart img {
