@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <title>App</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="menu burgerButton"
+        src="./assets/icons/icon_menu.svg"
+        alt="menu"
+      />
+      <div id="mobileMenu" class="mobile-menu mobile-menu--inactive">
+        <button class="burgerButton close-button">Close</button>
+        <div>
+          <ul>
+            <li><a href="">CATEGORIES</a></li>
+            <li><a href="">All</a></li>
+            <li><a href="">Clothes</a></li>
+            <li><a href="">Furniture</a></li>
+            <li><a href="">Toys</a></li>
+            <li><a href="">Other</a></li>
+          </ul>
+          <ul>
+            <li><a href="">My orders</a></li>
+            <li><a href="">My account</a></li>
+          </ul>
+        </div>
+        <ul>
+          <li><a class="email" href="">email@gmail.com</a></li>
+          <li><a class="sign-out" href="">Sign out</a></li>
+        </ul>
+      </div>
+      <nav class="nav">
+        <img class="logo" src="./assets/logos/logo_yard_sale.svg" alt="logo" />
+        <ul class="links-container">
+          <li class="link"><a href="">All</a></li>
+          <li class="link"><a href="">Clothes</a></li>
+          <li class="link"><a href="">Electronics</a></li>
+          <li class="link"><a href="">Furniture</a></li>
+          <li class="link"><a href="">Toys</a></li>
+          <li class="link"><a href="">Others</a></li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <p class="user-email">email@gmail.com</p>
+        <div id="userMenu" class="desktop-menu desktop-menu--inactive">
+          <ul>
+            <li><a href="" class="title">My orders</a></li>
+            <li><a href="" class="title">My account</a></li>
+            <li><a href="" class="title">Sign out</a></li>
+          </ul>
+        </div>
+        <img
+          class="cart"
+          id="buttonCart"
+          src="./assets/icons/icon_shopping_cart_notification.svg"
+          alt="cart"
+        />
+      </div>
+    </header>
+    <main class="main-container">
+      <aside class="checkout checkout--disable">
+        <div class="title-container">
+          <button>
+            <img
+              id="buttonCloseCheckout"
+              class="arrow"
+              src="./assets/icons/flechita.svg"
+              alt="close"
+            />
+          </button>
+          <h1>My Order</h1>
+        </div>
+        <div class="orders-container">
+          <div class="order">
+            <div class="image-container">
+              <img
+                src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="bike"
+              />
+              <p>Bike</p>
+            </div>
+            <div class="order-info">
+              <p>$30.00</p>
+              <button class="remove">remove</button>
+            </div>
+          </div>
+          <div class="order">
+            <div class="image-container">
+              <img
+                src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="bike"
+              />
+              <p>Bike</p>
+            </div>
+            <div class="order-info">
+              <p>$30.00</p>
+              <button class="remove">remove</button>
+            </div>
+          </div>
+          <div class="order">
+            <div class="image-container">
+              <img
+                src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="bike"
+              />
+              <p>Bike</p>
+            </div>
+            <div class="order-info">
+              <p>$30.00</p>
+              <button class="remove">remove</button>
+            </div>
+          </div>
+          <div class="total-container">
+            <p>Total</p>
+            <p>$560.00</p>
+          </div>
+          <button class="button-checkout">Checkout</button>
+        </div>
+      </aside>
+      <aside class="product-detail product-detail--inactive">
+        <button id="closeDetails" class="close">
+          <img src="./assets/icons/icon_close.png" alt="close" />
+        </button>
+      </aside>
+      <section id="productsContainer" class="cards-container"></section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
